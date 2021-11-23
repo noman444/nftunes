@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>NF-TUNES &mdash; Mint!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;family=Lilita+One:wght@400;500;700">
+
+    <link rel="stylesheet" href="asset/style9ba1.css?da130b7" type="text/css">
+    <script src="asset/main1743.js?cf680d0"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a href="http://www.ryseimports.com/blog/" class="nav-back">&#x2190; &nbsp; Home</a></div>
+    </nav>
+    <div>
+        <h1> NF-TUNE MINTING</h1>
+
+    </div>
+    <div>
+        <div class="ekit_heading_separetor_wraper ekit_heading_elementskit-border-divider">
+            <div class="elementskit-border-divider"></div>
+        </div>
+    </div>
+    <div class="mint">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Minting!</h2>
+                    <p>NF-Tunes is a decentralised marketplace that allows musicians to connect with one another, as well as investors, and digitally exchange NFTs for their creations within a blockchain-based tokenomics system, opening up a world of possibilities
+                        for those with a passion for the entertaining values of music and performance arts..</p>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="mint-widget">
+                        <h3>NF-TUNE</h3><small class="mint-cost">Current Cost: <strong>0.5 SOL</strong></small>
+                        <div id="root"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="guide">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Obtaining Solana</h2>
+                    <p>You'll need Sol available in your wallet to start minting. You can purchase Solana at an exchange and then send the funds to your wallet. The example below is for Phantom but other wallets should have similar steps.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="image image-deposit-1 align-self-center"></div><small>1. Open Phantom, click Receive</small></div>
+                <div class="col-md-4 text-center">
+                    <div class="image image-deposit-2 align-self-center"></div><small>2. Click Solana</small></div>
+                <div class="col-md-4 text-center">
+                    <div class="image image-deposit-3 align-self-center"></div><small>3. Click Copy and send funds to this address</small></div>
+            </div>
+        </div>
+    </div>
+    <footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
+        <div class="footer-width-fixer">
+            <div data-elementor-type="wp-post" data-elementor-id="91" class="elementor elementor-91" data-elementor-settings="[]">
+                <div class="elementor-section-wrap">
+                    <section class="elementor-section elementor-top-section elementor-element elementor-element-ce09c33 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ce09c33" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1505d12" data-id="1505d12" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-e1ae7f9 elementor-shape-circle elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="e1ae7f9" data-element_type="widget" data-widget_type="social-icons.default">
+                                        <div class="elementor-widget-container">
+
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-dca6160 elementor-widget elementor-widget-heading" data-id="dca6160" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h3 class="elementor-heading-title elementor-size-default">COPYRIGHT © NF-TUNES ALL RIGHTS RESERVED.</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        Date.prototype.monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        Date.prototype.getMonthName = function() {
+            return this.monthNames[this.getMonth()];
+        };
+        Date.prototype.getTimezoneName = function() {
+            let timezoneOffset = this.getTimezoneOffset();
+            timezoneOffset = (timezoneOffset / 60) * -1;
+            if (timezoneOffset !== 0) {
+                return 'GMT' + (timezoneOffset > 0 ? '+' : '') + timezoneOffset;
+            }
+            return 'GMT';
+        };
+        $(function() {
+            let countdown = $('.announcement-countdown');
+            let countdownDate = $('.announcement-date-inner');
+            let countdownTargetDate = new Date('2021-09-14T01:00:00Z');
+            let isCountdownReached = +countdownTargetDate - +new Date() < 0;
+            countdownDate.text(countdownTargetDate.getMonthName() + ' ' + countdownTargetDate.getDate() + ', ' + (countdownTargetDate.getHours() < 10 ? '0' + countdownTargetDate.getHours() : countdownTargetDate.getHours()) + ':' + (countdownTargetDate.getMinutes() < 10 ? '0' + countdownTargetDate.getMinutes() : countdownTargetDate.getMinutes()) + ':' + (countdownTargetDate.getSeconds() < 10 ? '0' + countdownTargetDate.getSeconds() : countdownTargetDate.getSeconds()) + ' ' + countdownTargetDate.getTimezoneName());
+            let onUpdateCountdown = () => {
+                let delta = +countdownTargetDate - +new Date();
+                if (delta < 0) {
+                    if (isCountdownReached) {
+                        return;
+                    }
+                    window.location.reload();
+                    isCountdownReached = true;
+                    return;
+                }
+                let hours = Math.floor(delta / (1000 * 60 * 60));
+                let minutes = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((delta % (1000 * 60)) / 1000);
+                countdown.html((hours < 10 ? '0' + hours : hours) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ':' + (seconds < 10 ? '0' + seconds : seconds));
+            };
+            setInterval(onUpdateCountdown, 1000);
+            onUpdateCountdown();
+        });
+    </script>
+    <script>
+        ! function(e) {
+            function t(t) {
+                for (var n, i, a = t[0], l = t[1], c = t[2], p = 0, s = []; p < a.length; p++) i = a[p], Object.prototype.hasOwnProperty.call(o, i) && o[i] && s.push(o[i][0]), o[i] = 0;
+                for (n in l) Object.prototype.hasOwnProperty.call(l, n) && (e[n] = l[n]);
+                for (f && f(t); s.length;) s.shift()();
+                return u.push.apply(u, c || []), r()
+            }
+
+            function r() {
+                for (var e, t = 0; t < u.length; t++) {
+                    for (var r = u[t], n = !0, a = 1; a < r.length; a++) {
+                        var l = r[a];
+                        0 !== o[l] && (n = !1)
+                    }
+                    n && (u.splice(t--, 1), e = i(i.s = r[0]))
+                }
+                return e
+            }
+            var n = {},
+                o = {
+                    1: 0
+                },
+                u = [];
+
+            function i(t) {
+                if (n[t]) return n[t].exports;
+                var r = n[t] = {
+                    i: t,
+                    l: !1,
+                    exports: {}
+                };
+                return e[t].call(r.exports, r, r.exports, i), r.l = !0, r.exports
+            }
+            i.m = e, i.c = n, i.d = function(e, t, r) {
+                i.o(e, t) || Object.defineProperty(e, t, {
+                    enumerable: !0,
+                    get: r
+                })
+            }, i.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, i.t = function(e, t) {
+                if (1 & t && (e = i(e)), 8 & t) return e;
+                if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                var r = Object.create(null);
+                if (i.r(r), Object.defineProperty(r, "default", {
+                        enumerable: !0,
+                        value: e
+                    }), 2 & t && "string" != typeof e)
+                    for (var n in e) i.d(r, n, function(t) {
+                        return e[t]
+                    }.bind(null, n));
+                return r
+            }, i.n = function(e) {
+                var t = e && e.__esModule ? function() {
+                    return e.default
+                } : function() {
+                    return e
+                };
+                return i.d(t, "a", t), t
+            }, i.o = function(e, t) {
+                return Object.prototype.hasOwnProperty.call(e, t)
+            }, i.p = "index.html";
+            var a = this["webpackJsonpcandy-machine-mint"] = this["webpackJsonpcandy-machine-mint"] || [],
+                l = a.push.bind(a);
+            a.push = t, a = a.slice();
+            for (var c = 0; c < a.length; c++) t(a[c]);
+            var f = l;
+            r()
+        }([])
+    </script>
+    <script src="2.76a09ca2.chunk.js"></script>
+    <script src="main.d0e30471.chunk.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0XBKRZK4D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-Y0XBKRZK4D');
+    </script>
+</body>
+
+</html>
